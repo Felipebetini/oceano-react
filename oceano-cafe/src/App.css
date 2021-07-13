@@ -1,0 +1,760 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #333;
+  color: #fff;
+  height: 100vh;
+  line-height: 1.6;
+  scroll-snap-type: y mandatory;
+}
+
+.App {
+  width: 100%;
+  height: 100%;
+}
+.divImgLogo {
+  border-right: solid;
+  height: 30vw;
+  margin: auto;
+}
+.imgLogo {
+  height: 20vw;
+  margin-top: 5vw;
+  margin-bottom: 3vw;
+}
+
+.logo {
+  margin: auto;
+
+  margin-top: 20vw;
+}
+.text-anchor {
+  font-size: 2vw;
+}
+.svg {
+  margin: auto;
+  width: 48vw;
+}
+.typewriter {
+  color: white;
+}
+
+.p {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.typewriter p {
+  border-right: 0.15em solid orange;
+  font-size: 14px;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.typewriter p:nth-child(1) {
+  width: 17.5em;
+  -webkit-animation: type 2s steps(40, end);
+  animation: type 2s steps(40, end);
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+.typewriter p:nth-child(2) {
+  width: 7.5em;
+  opacity: 0;
+  -webkit-animation: type2 2.5s steps(60, end);
+  animation: type2 2.5s steps(60, end);
+  -webkit-animation-delay: 2s;
+  animation-delay: 2s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+.typewriter p:nth-child(3) {
+  width: 5.5em;
+  opacity: 0;
+  -webkit-animation: type2 2.5s steps(40, end);
+  animation: type2 2.5s steps(40, end);
+  -webkit-animation-delay: 2s;
+  animation-delay: 3.8s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+.typewriter p:nth-child(4) {
+  width: 2.5em;
+  opacity: 0;
+  -webkit-animation: type3 1.5s steps(100, end),
+    blink 0.5s step-end infinite alternate;
+  animation: type3 1.5s steps(100, end), blink 0.5s step-end infinite alternate;
+  -webkit-animation-delay: 5s;
+  animation-delay: 5.5s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+@keyframes type {
+  0% {
+    width: 0;
+  }
+  99.9% {
+    border-right: 0.15em solid orange;
+  }
+  100% {
+    border: none;
+  }
+}
+
+@-webkit-keyframes type {
+  0% {
+    width: 0;
+  }
+  99.9% {
+    border-right: 0.15em solid orange;
+  }
+  100% {
+    border: none;
+  }
+}
+
+@keyframes type2 {
+  0% {
+    width: 0;
+  }
+  1% {
+    opacity: 1;
+  }
+  99.9% {
+    border-right: 0.15em solid orange;
+  }
+  100% {
+    opacity: 1;
+    border: none;
+  }
+}
+
+@-webkit-keyframes type2 {
+  0% {
+    width: 0;
+  }
+  1% {
+    opacity: 1;
+  }
+  99.9% {
+    border-right: 0.15em solid orange;
+  }
+  100% {
+    opacity: 1;
+    border: none;
+  }
+}
+
+@keyframes type3 {
+  0% {
+    width: 0;
+  }
+  1% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes type3 {
+  0% {
+    width: 0;
+  }
+  1% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+@-webkit-keyframes blink {
+  50% {
+    border-color: tranparent;
+  }
+}
+
+.spanInsideH1 {
+  color: white;
+}
+
+section {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  height: 100vh;
+}
+
+.arrowDown {
+  text-decoration: none;
+  color: white;
+}
+.arrowDown:hover {
+  color: rgba(35, 80, 217, 1);
+}
+.divAbout {
+  display: flex;
+  height: 100vh;
+}
+.aboutH1 {
+  font-size: 5vw;
+  transform: translate(20vw, -7vw);
+}
+.text1Div {
+  padding: 171px;
+  margin-left: 26vw;
+}
+.text1 {
+  color: white;
+  background: rgb(255, 255, 255, 0.16);
+  font-size: 2vw;
+  text-align: left;
+  padding: 1vw 15vw 0vw 1vw;
+  line-height: 2.3vw;
+  height: 30vw;
+  margin-top: 4vw;
+}
+
+.text2 {
+  color: white;
+  background: rgb(255, 255, 255, 0.16);
+  font-size: 2vw;
+  width: auto;
+  text-align: left;
+  height: auto;
+  border-top: solid white;
+  padding: 30px;
+  line-height: 2.3vw;
+}
+
+.textCenter {
+  height: 39vw;
+  border-left: solid white;
+  align-self: center;
+
+  margin-left: 63vw;
+}
+
+.textEnd {
+  align-self: end;
+}
+.carouselH1 {
+  color: white;
+  padding-top: 30px;
+}
+.main-carousel {
+  margin-top: 5vw;
+}
+.carousel-cell {
+  text-align: center;
+}
+
+.about2H1Up {
+  color: black;
+  font-size: 5vw;
+  margin-top: 5vw;
+}
+
+.about2H1 {
+  color: black;
+  writing-mode: sideways-lr;
+  writing-mode: vertical-lr;
+  font-size: 4vw;
+}
+
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 24vw;
+}
+
+button.fancy {
+  -webkit-appearance: button;
+  background-color: transparent;
+  border: 2px solid #000;
+  border-radius: 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  float: right;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  margin: 0;
+  outline: none;
+  overflow: visible;
+  padding: 1.25em 2em;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  text-transform: none;
+  transition: all 0.3s ease-in-out;
+  user-select: none;
+  width: 16.8125rem;
+}
+button.fancy::before {
+  content: " ";
+  width: 1.5625rem;
+  height: 2px;
+  background: black;
+  top: 50%;
+  left: 1.5em;
+  position: absolute;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  -webkit-transition: background 0.3s linear, width 0.3s linear;
+  transition: background 0.3s linear, width 0.3s linear;
+}
+button.fancy a {
+  font-size: 1.125em;
+  line-height: 1.33333em;
+  padding-left: 2em;
+  display: block;
+  text-align: left;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: black;
+}
+button.fancy .top-key {
+  height: 2px;
+  width: 1.5625rem;
+  top: -2px;
+  left: 0.625rem;
+  position: absolute;
+  background: white;
+  -webkit-transition: width 0.5s ease-out, left 0.3s ease-out;
+  transition: width 0.5s ease-out, left 0.3s ease-out;
+}
+button.fancy .bottom-key-1 {
+  height: 2px;
+  width: 1.5625rem;
+  right: 1.875rem;
+  bottom: -2px;
+  position: absolute;
+  background: white;
+  -webkit-transition: width 0.5s ease-out, right 0.3s ease-out;
+  transition: width 0.5s ease-out, right 0.3s ease-out;
+}
+button.fancy .bottom-key-2 {
+  height: 2px;
+  width: 0.625rem;
+  right: 0.625rem;
+  bottom: -2px;
+  position: absolute;
+  background: white;
+  -webkit-transition: width 0.5s ease-out, right 0.3s ease-out;
+  transition: width 0.5s ease-out, right 0.3s ease-out;
+}
+button.fancy:hover {
+  color: white;
+  background: black;
+}
+button.fancy:hover::before {
+  width: 0.9375rem;
+  background: white;
+}
+button.fancy:hover a {
+  color: white;
+  padding-left: 1.5em;
+}
+button.fancy:hover .top-key {
+  left: -2px;
+  width: 0px;
+}
+button.fancy:hover .bottom-key-1,
+button.fancy:hover .bottom-key-2 {
+  right: 0;
+  width: 0;
+}
+
+.hContact {
+  padding: 1vw;
+  color: white;
+}
+
+/* Style inputs with type="text", select elements and textareas */
+input[type="text"],
+select,
+textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+input[type="email"] {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type="submit"] {
+  background-color: #000000;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.to-top {
+  color: white;
+  padding-top: 1.8em;
+  display: inline-block; /* or block */
+  position: relative;
+  border-color: white;
+  text-decoration: none;
+  transition: all 0.3s ease-out;
+  margin: 1.2vw;
+  font-size: 1.6vw;
+}
+.to-top:before {
+  content: "▲";
+  font-size: 0.9em;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin-left: -0.7em;
+  border: solid 0.13em white;
+  border-radius: 10em;
+  width: 1.4em;
+  height: 1.4em;
+  line-height: 1.3em;
+  border-color: inherit;
+  transition: transform 0.5s ease-in;
+}
+.to-top:hover {
+  color: pink;
+  border-color: pink;
+}
+.to-top:hover:before {
+  transform: rotate(360deg);
+}
+
+.redes {
+  background-color: white;
+}
+
+.hRedes {
+  text-align: center;
+  color: white;
+}
+
+.redesSociais {
+  text-align: center;
+}
+
+.imgRedesFacebook {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+
+.imgRedesInstagram {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+
+.imgRedesInstagram:hover {
+  background: rgb(251, 232, 63);
+  background: linear-gradient(
+    90deg,
+    rgba(251, 232, 63, 1) 25%,
+    rgba(161, 82, 176, 1) 51%,
+    rgba(252, 70, 107, 1) 87%
+  );
+}
+
+.imgRedesFacebook:hover {
+  background: rgb(11, 51, 233);
+}
+
+.end {
+  color: tomato;
+  height: 2vw;
+}
+
+.pRedes {
+  margin-bottom: 1vw;
+}
+.btnSubmit {
+  margin: 1vw;
+}
+
+section#home {
+  background: rgb(255, 255, 255);
+  text-align: unset;
+  display: flex;
+}
+
+#subject {
+  height: 200px;
+}
+
+.contactDiv {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+section#about {
+  background: url("./assets/img/coffee.JPG") no-repeat center center/cover;
+}
+
+section#produtos {
+  background: url("./assets/img/pacote.jpg");
+  height: 100vh;
+}
+
+section#about2 {
+  background-color: transparent;
+}
+
+section#contact {
+  background: url("./assets/img/rotor.JPG") no-repeat center center/cover;
+}
+
+@media screen and (max-width: 500px) {
+  .text1 {
+    font-size: 5vw;
+  }
+  .text2 {
+    font-size: 5vw;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .card-deck {
+    display: none;
+  }
+  .text1Div {
+    padding: 0px;
+  }
+  .aboutH1 {
+    font-size: 10vw;
+  }
+
+  .text1 {
+    padding: 12px;
+    font-size: 5vw;
+    line-height: 25px;
+  }
+  .text2 {
+    padding: 12px;
+    font-size: 5vw;
+    line-height: 25px;
+  }
+  .main-carousel {
+    margin-top: auto;
+  }
+
+  .carouselH1 {
+    padding: 0;
+  }
+
+  .about2H1Up {
+    color: white;
+    font-size: 10vw;
+  }
+
+  .about2H1 {
+    color: black;
+    writing-mode: sideways-lr;
+    font-size: 10vw;
+  }
+  .text1Div {
+    margin: auto;
+  }
+  .aboutH1 {
+    transform: translate(-14vw, 12vw);
+  }
+  .textCenter {
+    padding-right: 0px;
+    border-left: solid white;
+    margin-left: 122px;
+    height: 127vw;
+  }
+  .text1 {
+    padding: 1vw 15vw 1vw 0vw;
+    margin-right: 0vw;
+    margin-top: 20vw;
+    height: 76vw;
+  }
+  .hContact {
+    font-size: 7vw;
+  }
+  #subject {
+    height: 25vw;
+  }
+
+  .to-top {
+    display: none;
+  }
+  .btnSubmit {
+    margin-top: 3vw;
+  }
+  .about2Div {
+    margin-top: 20vw;
+  }
+  .center {
+    margin-top: 26vw;
+  }
+  .imgLogo {
+    height: 80vw;
+
+    margin: auto;
+    margin-top: 8vw;
+  }
+  .divImgLogo {
+    border-right: none;
+    border-bottom: solid;
+    height: 100vw;
+    margin: 0;
+    min-width: 100%;
+    margin-top: 20vw;
+    text-align: center;
+  }
+  .logo {
+    min-width: 100%;
+    height: auto;
+    margin: 0;
+  }
+  .text-anchor {
+    font-size: 11vw;
+  }
+  .svg {
+    margin: auto;
+    margin-top: 38vw;
+    width: 100%;
+  }
+}
+
+@-webkit-keyframes glitch-loop-1 {
+  0% {
+    clip: rect(36px, 9999px, 9px, 0);
+  }
+  25% {
+    clip: rect(25px, 9999px, 99px, 0);
+  }
+  50% {
+    clip: rect(50px, 9999px, 102px, 0);
+  }
+  75% {
+    clip: rect(30px, 9999px, 92px, 0);
+  }
+  100% {
+    clip: rect(91px, 9999px, 98px, 0);
+  }
+}
+
+@keyframes glitch-loop-1 {
+  0% {
+    clip: rect(36px, 9999px, 9px, 0);
+  }
+  25% {
+    clip: rect(25px, 9999px, 99px, 0);
+  }
+  50% {
+    clip: rect(50px, 9999px, 102px, 0);
+  }
+  75% {
+    clip: rect(30px, 9999px, 92px, 0);
+  }
+  100% {
+    clip: rect(91px, 9999px, 98px, 0);
+  }
+}
+@-webkit-keyframes glitch-loop-2 {
+  0% {
+    top: -1px;
+    left: 1px;
+    clip: rect(65px, 9999px, 119px, 0);
+  }
+  25% {
+    top: -6px;
+    left: 4px;
+    clip: rect(79px, 9999px, 19px, 0);
+  }
+  50% {
+    top: -3px;
+    left: 2px;
+    clip: rect(68px, 9999px, 11px, 0);
+  }
+  75% {
+    top: 0px;
+    left: -4px;
+    clip: rect(95px, 9999px, 53px, 0);
+  }
+  100% {
+    top: -1px;
+    left: -1px;
+    clip: rect(31px, 9999px, 149px, 0);
+  }
+}
+@keyframes glitch-loop-2 {
+  0% {
+    top: -1px;
+    left: 1px;
+    clip: rect(65px, 9999px, 119px, 0);
+  }
+  25% {
+    top: -6px;
+    left: 4px;
+    clip: rect(79px, 9999px, 19px, 0);
+  }
+  50% {
+    top: -3px;
+    left: 2px;
+    clip: rect(68px, 9999px, 11px, 0);
+  }
+  75% {
+    top: 0px;
+    left: -4px;
+    clip: rect(95px, 9999px, 53px, 0);
+  }
+  100% {
+    top: -1px;
+    left: -1px;
+    clip: rect(31px, 9999px, 149px, 0);
+  }
+}
